@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Pizza</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="assets/images/pizza_logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#order">ORDER</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="assets/images/pizza1.jpg" alt="Pizza1" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Authentic Italian Pizza</h3>
+          <p>Our Pizza chef is a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani (Association of Neapolitan Pizzamakers)</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="assets/images/dough.jpg" alt="Dough" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Freshly prepared every day</h3>
+          <p>We let all dough rise for 24-48 hours, resulting in a very light and digestible pizza. (No bloating after!)</p>
+          <p>We use 00 Caputo flour from Italy and 100% Italian extra virgin olive oil exclusively.</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="assets/images/pizza2.jpg" alt="Pizza2" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Highest quality ingredients</h3>
+          <p>We offer buffalo mozzarella (Mozzarella di Bufala Campana D.O.P.) imported from the region around Naples and San Marzano D.O.P. tomatoes</p>
+        </div>      
+      </div>
+      
+      <div class="item">
+        <img src="assets/images/oven.jpg" alt="Oven" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Wood fire oven</h3>
+          <p>We cook all pizzas in an 850 degree Mario Acunto oven imported from Naples.</p> 
+          <p>We cook the pizza after you order so your product is never reheated. (It reheats well at home, though.)</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (MENU Section) -->
+<div id="menu" class="bg-1">
+  <div class="container">
+    <h3 class="text-center slideanim">PIZZA MENU</h3>
+    <p class="text-center slideanim">We'll make you some real Italian pizza.<br> Choose your Pizza below and order for collection at a store near you!</p>
+    
+    <div class="row display-flex text-center">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/Margherita.jpg" alt="Margherita" width="400" height="300">
+          <p><strong>Margherita - €10</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Basil, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/Bianca.jpg" alt="Bianca" width="400" height="300">
+          <p><strong>Bianca - €8</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Homemade mozzarella, ricotta, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/Marinara.jpg" alt="Marinara" width="400" height="300">
+          <p><strong>Marinara - €12</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Imported tomato sauce, Oregano, Garlic, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/Montanara.jpg" alt="Montanara" width="400" height="300">
+          <p><strong>Montanara - €12</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Lightly fried dough, Homemade marinara sauce, Homemade mozzarella, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/AllaVodka.jpg" alt="AllaVodka" width="400" height="300">
+          <p><strong>Alla Vodka - €12</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Vodka sauce, Homemade mozzarella, Basil, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/Melanzane.jpg" alt="Melanzane" width="400" height="300">
+          <p><strong>Melanzane - €15</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Eggplant, Ricotta, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/Pesto.jpg" alt="Pesto" width="400" height="300">
+          <p><strong>Pesto - €14</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Homemade pesto, Homemade mozzarella, Asiago, Pecorino romano (No olive oil)">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/BroccoliRabeSausageAsiago.jpg" alt="Broccoli Rabe Sausage" width="400" height="300">
+          <p><strong>Broccoli Rabe Sausage  - €15</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Broccoli rabe sausage, Asiago, Basil, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/FigArugulaAndMascarpone.jpg" alt="Fig, Arugula, and Mascarpone" width="400" height="300">
+          <p><strong>Fig & Mascarpone - €15</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Homemade mozzarella, Fig puree, Mascarpone, Arugula, Balsamic vinegar of Modena I.G.P. glaze">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/MeatballWithRicotta.jpg" alt="Meatball with Ricotta" width="400" height="300">
+          <p><strong>Meatball with Ricotta  - €15</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Imported tomato sauce, Homemade mozzarella, Homemade meatballs, Ricotta, Basil, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/MargheritaDOP.jpg" alt="Margherita DOP" width="400" height="300">
+          <p><strong>Margherita D.O.P. - €17</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="San Marzano tomato sauce D.O.P., Mozzarella di bufala campana D.O.P., Basil, Pecorino romano">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
+        <div class="thumbnail">
+          <img src="assets/images/LaSaporita.jpg" alt="Saporita" width="400" height="300">
+          <p><strong>Saporita - €19</strong></p>
+          <p><a href="#" data-toggle="tooltip" title="Mom’s homemade Genovese sauce, Mozzarella di bufala D.O.P., Eggplant, Splashes of pesto and E.V.O.O.">Toppings Info</a></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-shopping-cart"></span>Order</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="input-group"><label>QUANTITY</label>
+                <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus"></span>
+                </button>
+                </span>
+                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </button>
+                </span>
+            </div>
+            <div class="form-group"><label>SIZE</label>
+              <div class="radio">
+                <label class="radio-inline"><input type="radio" name="optradio">Small 9"</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Medium 12"</label>
+                <label class="radio-inline"><input type="radio" name="optradio">Large 16"</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sel1">CRUST</label>
+                <select class="form-control" id="sel1">
+                  <option>Original Hand Tossed</option>
+                  <option>Thin Crust</option>
+                  <option>Deep Pan</option>
+                </select>
+            </div>
+              <button type="submit" class="btn btn-block">ADD 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center slideanim">Contact</h3>
+  <p class="text-center slideanim"><em>Send us your feedback!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p class="slideanim">Call and place an order for collection</p>
+      <p class="slideanim"><span class="glyphicon glyphicon-map-marker"></span>1 Main Street, Dublin, IRELAND</p>
+      <p class="slideanim"><span class="glyphicon glyphicon-phone"></span>Phone: +353 90120160</p>
+      <p class="slideanim"><span class="glyphicon glyphicon-envelope"></span>Email: mail@pizza.ie</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control slideanim" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control slideanim" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control slideanim" id="subject" name="subject" placeholder="Subject" rows="1"></textarea>
+      <br>
+      <textarea class="form-control slideanim" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right slideanim" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="text-center">Location</h3>
+<!-- Add Google Maps -->
+<div id="googleMap"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(53.3498,-6.2603);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlW-uV2f7rzdz0e_ZADMv5kTKH8wXxB50&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Container (The About Section) -->
+<div id="about" class="container text-center">
+  <h3 class="slideanim">ABOUT US</h3>
+  <p class="slideanim"><em>We love Pizza! Our Pizza Chef is a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani</em></p>
+  <p class="slideanim">Jordanio's Authentic Pizza Napoletana has been in business since 1967. Owner and pizzaiolo Jordanio is a a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani (Association of Neapolitan Pizza-makers), and all of our pizzas are made according to Neapolitan tradition. We use only the highest-quality ingredients, including buffalo-milk mozzarella (Mozzarella di Bufala Campana D.O.P.) and San Marzano D.O.P. tomatoes imported from Naples as well as our fresh, home-made mozzarella. All pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Mario Acunto wood-fired brick oven from Naples. The finished product is a pizza whose taste will bring you back to Italy. We recommend our three specialties - the Margherita D.O.P., Mom's, and La Saporita. 
+</p>
+  <br>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
+      <p class="text-center"><strong>Association of Neapolitan Pizzamakers</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="assets/images/APN.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Our Pizza Chef is a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani (Association of Neapolitan Pizzamakers) and trained with Roberto Caporuscio of Don Antonio by Starita.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
+      <p class="text-center"><strong>Buffalo-Milk Mozzarella</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="assets/images/bufala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>We offer buffalo mozzarella (Mozzarella di Bufala Campana D.O.P.) imported from the region around Naples as well as our own fresh mozzarella that we make daily in the kitchen of our store</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
+      <p class="text-center"><strong>Protected Designation of Origin (D.O.P.)</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="assets/images/DOPseal.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>The “D.O.P.” label protects various Italian foods and certifies that the product is of the highest quality and has undergone numerous inspections.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
+      <p class="text-center"><strong>San Marzano D.O.P. Tomatoes</strong></p><br>
+      <a href="#demo4" data-toggle="collapse">
+        <img src="assets/images/SanMarzanoLogo.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo4" class="collapse">
+        <p>We use San Marzano D.O.P. tomatoes as well as other imported Italian tomatoes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <div id="footer-details" class="row">
+                <div class="col-sm-4">
+                    <h5 class="uppercase general-sub slideanim">Opening Hours</h5>
+                    <p class="inline-block slideanim">
+                        Tuesday - Sunday (Closed Mondays)<br>
+                        11:30am - 8:00pm<br>
+                        ... OR UNTIL WE RUN OUT OF DOUGH!
+                    </p>
+                </div>
+                <div class="col-sm-4 ">
+                    <h5 class="uppercase general-sub slideanim">Address</h5>
+                    <p class="inline-block slideanim">
+                        1 Main Street, Dublin, IRELAND<br>
+                        Phone: +353 90120160<br>
+                        Email: mail@pizza.ie
+                    </p>
+                </div>
+                <div class="col-sm-4 ">
+                    <h5 class="uppercase general-sub slideanim">Social</h5>
+                    <ul class="list-inline social-links slideanim">
+                        <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-instagram "></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+    $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+    
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+    });
+})
+
+</script>
+
+</body>
+</html>
