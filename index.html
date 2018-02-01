@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  
   <title>Pizza</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,8 +29,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#menu">MENU</a></li>
-        <li><a href="#order">ORDER</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#location">LOCATION</a></li>
         <li><a href="#about">ABOUT</a></li>
       </ul>
     </div>
@@ -292,9 +292,10 @@
   </div>
 </div>
 
-<h3 class="text-center">Location</h3>
+<div id="location" class="container">
+<h3 class="text-center slideanim">Location</h3>
 <!-- Add Google Maps -->
-<div id="googleMap"></div>
+<div id="googleMap" class="slideanim"></div>
 <script>
 function myMap() {
 var myCenter = new google.maps.LatLng(53.3498,-6.2603);
@@ -309,6 +310,7 @@ marker.setMap(map);
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
+</div>
 
 <!-- Container (The About Section) -->
 <div id="about" class="container text-center">
@@ -317,7 +319,8 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <p class="slideanim">Jordanio's Authentic Pizza Napoletana has been in business since 1967. Owner and pizzaiolo Jordanio is a a certified pizzaiolo of the Associazione Pizzaiuoli Napoletani (Association of Neapolitan Pizza-makers), and all of our pizzas are made according to Neapolitan tradition. We use only the highest-quality ingredients, including buffalo-milk mozzarella (Mozzarella di Bufala Campana D.O.P.) and San Marzano D.O.P. tomatoes imported from Naples as well as our fresh, home-made mozzarella. All pizzas are drizzled with 100% Italian extra-virgin olive oil and then baked to perfection at 850 degrees in a Mario Acunto wood-fired brick oven from Naples. The finished product is a pizza whose taste will bring you back to Italy. We recommend our three specialties - the Margherita D.O.P., Mom's, and La Saporita. 
 </p>
   <br>
-  <div class="row">
+  <br>
+  <div class="row display-flex">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
       <p class="text-center"><strong>Association of Neapolitan Pizzamakers</strong></p><br>
       <a href="#demo" data-toggle="collapse">
@@ -328,7 +331,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
-      <p class="text-center"><strong>Buffalo-Milk Mozzarella</strong></p><br>
+      <p class="text-center"><strong>Buffalo-Milk Mozzarella</strong></p><br><br>
       <a href="#demo2" data-toggle="collapse">
         <img src="assets/images/bufala.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
@@ -346,7 +349,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
       </div>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 slideanim">
-      <p class="text-center"><strong>San Marzano D.O.P. Tomatoes</strong></p><br>
+      <p class="text-center"><strong>San Marzano D.O.P. Tomatoes</strong></p><br><br>
       <a href="#demo4" data-toggle="collapse">
         <img src="assets/images/SanMarzanoLogo.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
@@ -362,7 +365,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <div id="footer-details" class="row">
+  <div class="row">
                 <div class="col-sm-4">
                     <h5 class="uppercase general-sub slideanim">Opening Hours</h5>
                     <p class="inline-block slideanim">
@@ -374,18 +377,18 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
                 <div class="col-sm-4 ">
                     <h5 class="uppercase general-sub slideanim">Address</h5>
                     <p class="inline-block slideanim">
-                        1 Main Street, Dublin, IRELAND<br>
+                        1 Main Street, Dublin, Ireland<br>
                         Phone: +353 90120160<br>
                         Email: mail@pizza.ie
                     </p>
                 </div>
                 <div class="col-sm-4 ">
                     <h5 class="uppercase general-sub slideanim">Social</h5>
-                    <ul class="list-inline social-links slideanim">
-                        <li><a target="_blank " href="# "><i class="fa fa-facebook "></i></a></li>
-                        <li><a target="_blank " href="# "><i class="fa fa-twitter "></i></a></li>
-                        <li><a target="_blank " href="# "><i class="fa fa-instagram "></i></a></li>
-                        <li><a target="_blank " href="# "><i class="fa fa-youtube "></i></a></li>
+                    <ul class="list-inline social-links">
+                        <li><a target="_blank " href="# "><i class="fa fa-facebook slideanim"></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-twitter slideanim"></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-instagram slideanim"></i></a></li>
+                        <li><a target="_blank " href="# "><i class="fa fa-youtube slideanim"></i></a></li>
                     </ul>
                 </div>
             </div>
