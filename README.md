@@ -1,6 +1,6 @@
 # Jordan's Pizza | Responsive Pizza Restaurant Website
 
-This is a ‘digital invite’ I have developed for my brother and his fiance who are getting married in 2019. It is a front-end website that provides visitors with:
+This is a responsive one page website for a Pizza restaurant. It is a front-end only website that provides visitors with:
 1.	Pizza Menu with toppings details, prices, pictures and a modal window for Order options
 2.	Contact details including an embedded google map, opening hours, address and phone number
 3.	Information about the history and cooking tradition of the Pizza Restaurant
