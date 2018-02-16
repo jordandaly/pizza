@@ -195,6 +195,9 @@ inline-block {
     .carousel-caption {
       display: none; /* Hide all the carousel text when the screen is less than 600 pixels wide */
     }
+    .container {
+        padding: 5% 5%;
+    }
   }
   @media (max-width: 768px) {
     .carousel-caption p {
