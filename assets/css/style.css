@@ -1,35 +1,50 @@
- .row.display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row.display-flex > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
+ /*Navigation Menu*/
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  
+  .navbar-brand>img {
+   max-height: 100%;
+   height: 100%;
+   width: auto;
+   margin: 0 auto;
 
-body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
+
+   /* probably not needed anymore, but doesn't hurt */
+   -o-object-fit: contain;
+   object-fit: contain; 
+
+}
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
   }
-  h3, h4 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
-      font-size: 20px;
-      color: #111;
+  .navbar-nav li a:hover {
+      color: #fff !important;
   }
-  .container {
-      padding: 80px 120px;
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
   }
-  .person {
-      border: 10px solid transparent;
-      margin-bottom: 25px;
-      width: 80%;
-      height: 80%;
-      opacity: 0.7;
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
   }
-  .person:hover {
-      border-color: #f1f1f1;
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
   }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+ /*Carousel (Header Section) */
   .carousel-inner img {
       /*-webkit-filter: grayscale(90%);
       filter: grayscale(90%);  make all photos black and white */ 
@@ -43,10 +58,23 @@ body {
   .carousel-caption h3 {
       color: #fff !important;
   }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
+ 
+
+
+/*General CSS used throughout*/
+
+body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 20px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
   }
   .bg-1 {
       background: #2d2d30;
@@ -85,6 +113,17 @@ body {
       background-color: #fff;
       color: #000;
   }
+  
+   .row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+  
+  /*Modal Section*/
   .modal-header, h4, .close {
       background-color: #333;
       color: #fff !important;
@@ -97,44 +136,27 @@ body {
   .nav-tabs li a {
       color: #777;
   }
+  /*About Section*/
+  .collapse-info {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .collapse-info:hover {
+      border-color: #f1f1f1;
+  }
+  
+  /*Location Section*/
   #googleMap {
       width: 100%;
       height: 400px;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
-  }  
-  .navbar {
-      font-family: Montserrat, sans-serif;
-      margin-bottom: 0;
-      background-color: #2d2d30;
-      border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
-      opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-      color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-      color: #fff !important;
-  }
-  .navbar-nav li.active a {
-      color: #fff !important;
-      background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-  }
-  .open .dropdown-toggle {
-      color: #fff;
-      background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-      color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-      background-color: red !important;
-  }
+  } 
+  
+  /*Footer Section*/
   footer {
       background-color: #2d2d30;
       color: #f5f5f5;
@@ -154,19 +176,6 @@ body {
       resize: none;
   }
 
- .navbar-brand>img {
-   max-height: 100%;
-   height: 100%;
-   width: auto;
-   margin: 0 auto;
-
-
-   /* probably not needed anymore, but doesn't hurt */
-   -o-object-fit: contain;
-   object-fit: contain; 
-
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -181,6 +190,18 @@ inline-block {
     display: inline-block;
 }
 
+/*Media queries*/
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide all the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  @media (max-width: 768px) {
+    .carousel-caption p {
+      display: none; /* Hide the carousel p text when the screen is less than 768 pixels wide */
+    }
+  }
+/*Animation effect*/
 .slideanim {visibility:hidden;}
 .slide {
     /* The name of the animation */
