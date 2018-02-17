@@ -98,8 +98,8 @@
 <!-- Container (MENU Section) -->
 <section id="menu" class="bg-1">
   <div class="container">
-    <h3 class="text-center slideanim">PIZZA MENU</h3>
-    <p class="text-center slideanim">We'll make you some real Italian pizza.<br> Choose your Pizza below and order for collection!</p>
+    <h3 class="text-center slideanimate">PIZZA MENU</h3>
+    <p class="text-center slideanimate">We'll make you some real Italian pizza.<br> Choose your Pizza below and order for collection!</p>
     
     <div class="row display-flex text-center">
       <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3 hvr-grow slideanim">
@@ -426,6 +426,10 @@ $(document).ready(function(){
     } // End if
   });
   
+   $(".slideanimate").each(function(){
+        $(this).stop().delay(1000).addClass("slide");
+    });
+  
     $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
@@ -436,6 +440,7 @@ $(document).ready(function(){
       }
     });
     });
+    
 })
 
 </script>
