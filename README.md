@@ -32,7 +32,7 @@ my ideas for further development of this site (beyond the scope of this site as 
 ## Testing
 
 Manual testing was undertaken for this application and satisfactorily passed. A sample of the tests conducted are as follows:
-1.	Testing the responsiveness of the application (on desktop and mobile applications)
+1.	Testing the responsiveness of the application (Site was tested on different browsers and then using different mobile devices like an Android phone and iPad )
 2.	Testing the code to call the google API
 3.	Testing buttons and hyperlinks throughout the site
 

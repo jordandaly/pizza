@@ -100,6 +100,10 @@ body {
       margin-top: 15px;
       color: #555;
   }
+  
+  .thumbnail p:nth-child(3) {
+      font-size: 12px;
+  }
   .btn {
       padding: 10px 20px;
       background-color: #333;
