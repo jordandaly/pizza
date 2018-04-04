@@ -8,7 +8,7 @@ This is a responsive one page website for a Pizza restaurant. It is a front-end 
 
 ## Demo
 
-A demo of this site is available [here](https://jordandaly.github.io/ucfd/index.html).
+A demo of this site is available [here](https://jordandaly.github.io/pizza/index.html).
 
 This website is hosted by Github Pages, a static site hosting service which supports client-side code. It does not support server-side functionality.
 
