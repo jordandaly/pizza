@@ -36,8 +36,18 @@ Manual testing was undertaken for this application and satisfactorily passed. A 
 2.	Testing the code to call the google API
 3.	Testing buttons and hyperlinks throughout the site
 
-## Authors
+## Author
 
 **Jordan Daly** - This project was completed as part of Code Institute’s Mentored Online Full Stack Web Development course in 2018.
+
+### Content
+- The text for the Carousel, Menu and About sections were taken from: [Saverios Pizza](http://www.saveriospizza.com/)
+
+### Media
+- The images used in this site were obtained from: [Saverios Pizza](http://www.saveriospizza.com/)
+
+### Acknowledgements
+
+- I received inspiration for this project from: [W3schools 'Band' bootstrap theme](https://www.w3schools.com/bootstrap/bootstrap_theme_band.asp)
 
 
