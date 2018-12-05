@@ -25,16 +25,15 @@ This website is hosted by Github Pages, a static site hosting service which supp
 
 ## UX Design
 
-Details of the UX design and research process undertaken as part of this project is available in the 
-projectdocumentation folder. This document outlines how I approached the design of this site and includes 
-my ideas for further development of this site (beyond the scope of this site as a static website project).
+Details of the UX design undertaken as part of this project is available in the Wireframes subfolder of projectdocumentation folder. This document outlines how I approached the design of this website.
 
 ## Testing
 
-Manual testing was undertaken for this application and satisfactorily passed. A sample of the tests conducted are as follows:
-1.	Testing the responsiveness of the application (Site was tested on different browsers and then using different mobile devices like an Android phone and iPad )
-2.	Testing the code to call the google API
-3.	Testing buttons and hyperlinks throughout the site
+Manual testing was undertaken for this application and satisfactorily passed. The following tests are documented in the Testing subfolder of the projectdocumentation folder with a Screenshots folder inside.
+1.  Testing for Cross Browser Compatibility (website was tested on different browsers)
+2.	Testing for responsiveness  (website was tested on different device screen sizes using chrome responsive developer tools)
+3.	Testing the call to the Google Maps API
+4.	Testing the interactive features (single page scroll navigation buttons, hover effects, slide animation, modal form, image carousel buttons, tooltips, collapsible images with text)
 
 ## Author
 
