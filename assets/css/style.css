@@ -69,7 +69,7 @@ body {
   }
   h3, h4 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
+      letter-spacing: 5px;      
       font-size: 20px;
       color: #111;
   }
@@ -123,8 +123,14 @@ body {
   flex-wrap: wrap;
 }
 .row.display-flex > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* safari issue */
+.row.display-flex:before, 
+.row.display-flex:after {
+   display: none;  
 }
   
   /*Modal Section*/
